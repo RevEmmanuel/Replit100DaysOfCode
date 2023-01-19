@@ -21,8 +21,8 @@ if Glasses == "yes":
   print("Correct!")
 else:
   print("Wrong!")
-  WhoGlasses = input("And who wears glasses?")
-  if WhoGlasses == "Leonard":
+WhoGlasses = input("And who wears glasses?")
+if WhoGlasses == "Leonard":
     print("You got it")
-  else:
+else:
     print("Try again!")
