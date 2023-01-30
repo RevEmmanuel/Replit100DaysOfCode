@@ -29,4 +29,4 @@ while True:
   if again=="No" or again=="no":
     break
   time.sleep(1)
-  os.system("clear")
+  os.system("cls")
