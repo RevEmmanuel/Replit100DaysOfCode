@@ -5,3 +5,4 @@ for i in range(1, 31):
     default_text = f"You thought Day {i} was"
     print(f"{default_text:^35}")
     print(f"{thought:^35}")
+print("Thanks for joining us!")
