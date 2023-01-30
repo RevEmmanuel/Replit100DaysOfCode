@@ -16,5 +16,5 @@ while True:
         if (int(input("Press 2 to exit: \n")) == 2):
             exit()
     else:
-        os.system("clear")
+        os.system("cls")
         continue
