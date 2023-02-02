@@ -11,8 +11,8 @@ while True:
         exit()
     elif choice == 1:
         print("Playing some proper tunes!")
-        # playsound.playsound("C:/Users/user/Documents/Replit 100 Days Of Code/Python/Flowers_by_Arrdee.m4p")
-        playsound('./' + "Flowers_by_Arrdee.m4p")
+        # playsound('./' + "C:\Users\user\Documents\Replit 100 Days Of Code\Python\Asake-Yoga-(TrendyBeatz.com).mp3")
+        playsound('./' + "Asake-Yoga-(TrendyBeatz.com).mp3")
         if (int(input("Press 2 to exit: \n")) == 2):
             exit()
     else:
