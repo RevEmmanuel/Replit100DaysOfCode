@@ -48,4 +48,4 @@ while True:
     break
 
   time.sleep(1)
-  os.system("clear")
+  os.system("cls")
