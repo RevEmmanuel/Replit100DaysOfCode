@@ -7,7 +7,6 @@ with open("to_do", "r") as file:
     todo = eval(data)
     file.close()
 
-
 def add_to_do():
   time.sleep(1)
   os.system("cls")
