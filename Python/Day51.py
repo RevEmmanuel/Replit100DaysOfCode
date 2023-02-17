@@ -39,7 +39,7 @@ def view():
 
 def edit():
   time.sleep(1)
-  os.system("clear")
+  os.system("cls")
   find = input("Name of todo to edit > ")
   found = False
   for row in todo:
@@ -60,7 +60,7 @@ def edit():
 
 def remove():
   time.sleep(1)
-  os.system("clear")
+  os.system("cls")
   find = input("Name of todo to remove > ")
   for row in todo:
     if find in row:
@@ -77,6 +77,11 @@ while True:
   elif menu == "4":
     remove()
   else:
+    time.sleep(1)
+    os.system("cls")
+    f = open("to_do", "w")
+    f.write(str(todo))
+    f.close()
     break
 
   time.sleep(1)
@@ -84,3 +89,4 @@ while True:
   f = open("to_do", "w")
   f.write(str(todo))
   f.close()
+  
