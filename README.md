@@ -16,3 +16,7 @@ python get-pip.py
 ```
 pip install chardet
 ```
+* tkinter
+```
+pip install tkinter
+```
