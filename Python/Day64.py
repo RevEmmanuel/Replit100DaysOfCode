@@ -16,10 +16,10 @@ class Doctor(Job):
     experience = ""
     specialty = ""
 
-    def __init__(self, name, salary, hours_worked, experience, specialty):
+    def __init__(self, salary, hours_worked, experience, specialty):
         self.experience = experience
         self.specialty = specialty
-        self.name = name
+        self.name = "Doctor"
         self.salary = salary
         self.hours_worked = hours_worked
 
@@ -30,10 +30,10 @@ class Teacher(Job):
     subject = ""
     position = ""
 
-    def __init__(self, name, salary, hours_worked, subject, position):
+    def __init__(self, salary, hours_worked, subject, position):
         self.subject = subject
         self.position = position
-        self.name = name
+        self.name = "Teacher"
         self.salary = salary
         self.hours_worked = hours_worked
         
@@ -44,9 +44,9 @@ class Teacher(Job):
 lawyer = Job("Lawyer", 4500.60, 8)
 lawyer.print_self()
 
-doctor = Doctor("Doctor", 450.60, 12, "7", "Neurosurgeon")
+doctor = Doctor(450.60, 12, "7", "Neurosurgeon")
 doctor.print_self()
 
-teacher = Teacher("Teacher", 2000, 8, "Computer Science", "Teacher")
+teacher = Teacher(2000, 8, "Computer Science", "Teacher")
 teacher.print_self()
 
