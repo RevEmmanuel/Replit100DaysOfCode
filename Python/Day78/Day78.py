@@ -2,13 +2,13 @@ from flask import Flask
 
 app = Flask(__name__)
 
-myReflections = {}
+my_reflections = {}
 
-myReflections["78"] = {"link": "https://replit.com/@DavidAtReplit/Day-075-Solution#index.html",
+my_reflections["78"] = {"link": "https://github.com/RevEmmanuel/Replit100DaysOfCode/tree/main/Python/Day78",
                        "Reflection": "Was actually quite easy for me ven if I was a bit lazy with the css 😭"}
 
-myReflections["79"] = {
-    "link": "https://replit.com/@DavidAtReplit/Day-075-Solution#index.html", "Reflection": "Very very easy."}
+my_reflections["79"] = {
+    "link": "https://github.com/RevEmmanuel/Replit100DaysOfCode/blob/main/Python/Day79.py", "Reflection": "Very very easy."}
 
 
 @app.route('/<pageNumber>')
@@ -20,9 +20,9 @@ def index(pageNumber):
     f.close()
 
     page = page.replace("{day}", pageNumber)
-    page = page.replace("{date}", myReflections[pageNumber]["link"])
+    page = page.replace("{date}", my_reflections[pageNumber]["link"])
     page = page.replace(
-        "{reflection}", myReflections[pageNumber]["Reflection"])
+        "{reflection}", my_reflections[pageNumber]["Reflection"])
     return page
 
 
