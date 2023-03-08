@@ -1,0 +1,21 @@
+button {
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  border-radius: 10px 0px 10px 0px;
+  padding: 0px 20px;
+  margin: 20px;
+  background-color: darkgreen;
+  border: 1px solid white;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: darkblue;
+  border: 1px solid white;
+  color: white;
+  margin-bottom: 10px;
+}

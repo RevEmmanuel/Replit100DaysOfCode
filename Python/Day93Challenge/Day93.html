@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song searcher</title>
+    <link rel="stylesheet" href="./static/Day93.css" />
+  </head>
+  <body>
+    <form method="post" action="/search">
+      <label for="year">Select a year:</label>
+      <div class="input-group">
+        <button type="button" class="decrease-btn">-</button>
+        <input
+          type="number"
+          id="year"
+          name="year"
+          min="1900"
+          max="2023"
+          value="2023"
+        />
+        <button type="button" class="increase-btn">+</button>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    {audio}
+
+    <script>
+      const decreaseBtn = document.querySelector(".decrease-btn");
+      const increaseBtn = document.querySelector(".increase-btn");
+      const yearInput = document.querySelector("#year");
+
+      decreaseBtn.addEventListener("click", () => {
+        yearInput.stepDown();
+      });
+
+      increaseBtn.addEventListener("click", () => {
+        yearInput.stepUp();
+      });
+    </script>
+  </body>
+</html>
