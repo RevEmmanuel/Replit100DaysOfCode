@@ -40,4 +40,4 @@ schedule.every(1).hours.do(send_mail)
 
 while True:
     schedule.run_pending()
-    time.sleep(580 * 60)
+    time.sleep(58 * 60)
