@@ -37,3 +37,15 @@ pip install tkinter
 ```
 pip install Flask
 ```
+
+- schedule
+
+```
+pip install schedule
+```
+
+- BeautifulSoup
+
+```
+pip install beautifulsoup4
+```
