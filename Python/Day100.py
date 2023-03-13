@@ -15,8 +15,7 @@ url = "https://www.jumia.com.ng/vava-furniture-imported-high-quality-massage-cha
 
 
 def send_mail(new_price):
-    body = f"""This product is now selling for {new_price} which is below your buying price of {product["buying_price"]} """
-    email = body
+    email = f"""<p><a href='{url}'>This item</a> is now selling for {new_price} which is below your buying price of {product["buying_price"]}</p>"""
     server = "smtp.gmail.com"
     port = 587
     s = smtplib.SMTP(host=server, port=port)
@@ -53,4 +52,4 @@ schedule.every(24).hours.do(check_changes)
 
 while True:
     schedule.run_pending()
-    time.sleep(86399) # 23 hours and 59 minutes
+    time.sleep(86399)  # 23 hours and 59 minutes
